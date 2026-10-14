@@ -1,6 +1,6 @@
 # scripts/
 
-**这里是运行版。正本在 [`research-workflow`](https://github.com/crce-ux/research-workflow) 的 `scripts/`**——开发与测试都在那边。
+**这里是运行版。正本在 [`research-workflow`](https://github.com/crce-ux/research-workflow) 的 `scripts/`**——开发与测试都在 research-workflow。
 
 | 脚本 | 干什么 |
 |---|---|
@@ -17,10 +17,10 @@
 `check_grant_rules.py` 查的是**存在性**：指导类文档里有没有写死一个年度性数值
 （篇幅 / 年龄 / 申请代码 / 经费 / 资助期限）。NSFC 每年改版，
 写死的值 1–2 年后不仅无用，还有害。**「这个数对不对」不在它的射程内**——
-那要等当年《项目指南》。
+须等当年《项目指南》。
 
 **只有 token diff 这一条是纯比对**，而且手册原文就写着
-「**输出前复核 token diff —— 这一项不可省；无脚本时手工列清单**」。这个脚本就是那一项。
+「**输出前复核 token diff —— 这一项不可省；无脚本时手工列清单**」。本脚本即为此项。
 
 ```bash
 python scripts/check_token_diff.py <原文> <改写后>
