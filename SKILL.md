@@ -167,10 +167,17 @@ LaTeX 命令 · 引用 key · 数学 · **数字与单位** · 变量 · 路径/
 | 脚本 | 干什么 |
 |---|---|
 | `scripts/check_token_diff.py` | **改写前后的受保护 token 比对**——丢失的必须逐个解释 |
+| `scripts/check_grant_rules.py` | **指导类文档里有没有写死年度性数值**（篇幅 / 年龄 / 申请代码 / 经费 / 资助期限）。两条 Anti-Patterns 的机检版 |
 | `scripts/check_skill_structure.py` · `scripts/selfcheck.py` | skill 自检 |
 
-> ⚠️ **本 skill 大部分是判断（C 类），不设机检**——只有 token diff 这一条是
-> 纯比对、可判定，所以做成脚本。**不给判断类硬造检查器。**
+```bash
+python scripts/check_grant_rules.py <文档或目录>
+```
+
+> ⚠️ **本 skill 大部分是判断（C 类），不设机检。**
+> 两个脚本都只做**纯比对或存在性**：token diff 比「丢了没有」，
+> check_grant_rules 查「有没有写死一个数」。
+> ⭐ **不给判断类硬造检查器**——「这个数对不对」要等当年《项目指南》，机器判不了。
 
 ---
 
@@ -182,6 +189,7 @@ LaTeX 命令 · 引用 key · 数学 · **数字与单位** · 变量 · 路径/
 | `references/medical-faculty.md` | 医学科学部场景——第 11/12/13 层 |
 | `references/rules.md` | 申报前——五处权威来源、核对清单、**AI 使用政策** |
 | `references/de-ai.md` | 改标书正文表达时——四层扫描、章节职责表、token 保护、回归样例 |
+| `references/examples.md` | **正反样例**：章节职责错位（把研究内容写进立项依据）、创新点、年度性数值、四层扫描、去味时的 token 保护 |
 
 ---
 
