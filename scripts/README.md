@@ -1,6 +1,6 @@
 # scripts/
 
-**这里是运行版。正本在 [`research-workflow`](https://github.com/crce-ux/research-workflow) 的 `scripts/`**——开发与测试都在 research-workflow。
+**本目录是运行版。正本在 [`research-workflow`](https://github.com/crce-ux/research-workflow) 的 `scripts/`**——开发与测试都在 research-workflow。
 
 | 脚本 | 干什么 |
 |---|---|
