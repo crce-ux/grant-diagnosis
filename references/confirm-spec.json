@@ -1,0 +1,69 @@
+{
+  "title": "科研基金标书诊断 · 前置确认",
+  "intro": "以下事项决定诊断从哪一层切入、覆盖哪些检查、交付到哪一步。填写完成后提交，诊断据此展开。",
+  "questions": [
+    {
+      "id": "program",
+      "type": "radio",
+      "label": "申报类型",
+      "effect": "决定问题规模与篇幅判断。不同类型对创新层级与工作量的要求不同，诊断口径随之调整。",
+      "required": true,
+      "options": [
+        {"value": "青年科学基金"},
+        {"value": "面上项目"},
+        {"value": "重点项目"},
+        {"value": "院内或省部级课题"},
+        {"value": "其他"}
+      ]
+    },
+    {
+      "id": "materials",
+      "type": "radio",
+      "label": "现有材料",
+      "effect": "决定从第几层开始。只有选题时先查问题合法性；有全文时做十层完整诊断。",
+      "required": true,
+      "options": [
+        {"value": "只有选题方向"},
+        {"value": "有科学问题与假说"},
+        {"value": "有提纲或章节框架"},
+        {"value": "有初稿或全文", "hint": "可做十层完整诊断"}
+      ]
+    },
+    {
+      "id": "discipline",
+      "type": "radio",
+      "label": "学科归属",
+      "effect": "决定是否套用医学科学部的三层特有检查。非医学科学部时跳过该节。",
+      "required": true,
+      "options": [
+        {"value": "医学科学部"},
+        {"value": "生命科学部"},
+        {"value": "其他学部"},
+        {"value": "未定"}
+      ]
+    },
+    {
+      "id": "review_lens",
+      "type": "radio",
+      "label": "是否需要评审视角扫描",
+      "effect": "开启时第 8 层必须同时给出最强支撑点与最可能被拒点，缺一不可。",
+      "required": true,
+      "options": [
+        {"value": "要，按评审视角过一遍"},
+        {"value": "不要，只做结构与逻辑诊断"}
+      ]
+    },
+    {
+      "id": "deliverable",
+      "type": "radio",
+      "label": "本次交付范围",
+      "effect": "决定停在哪一步。涉及改写时必须跑 token diff，确认没有新增事实。",
+      "required": true,
+      "options": [
+        {"value": "断点清单"},
+        {"value": "断点清单 + 重构建议"},
+        {"value": "断点清单 + 重构建议 + 表达层改写"}
+      ]
+    }
+  ]
+}
